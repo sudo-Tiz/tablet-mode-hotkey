@@ -1,4 +1,4 @@
-This repository is a fork of tablet-mode-hotkey [https://gitlab.com/jmole/tablet-mode-hotkey] from [Jon Moeller](https://gitlab.com/jmole)  
+This repository is a fork of [tablet-mode-hotkey](https://gitlab.com/jmole/tablet-mode-hotkey) from [Jon Moeller](https://gitlab.com/jmole)  
 I just made it compatible with my (any) configuration :
 
 ---
