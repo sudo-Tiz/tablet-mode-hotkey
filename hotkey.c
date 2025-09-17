@@ -2,10 +2,10 @@
 #include <linux/input.h>
 #include <linux/uinput.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <unistd.h>
 #include <sys/select.h>
-
-
 #include <signal.h>
 #include <errno.h>
 
@@ -75,7 +75,7 @@ int main(int argc, char *argv[])
     if (event_fd < 0)
     {
         perror("Failed to open device:");
-        perror(INPUT_DEVICE);
+        perror(input_device);
         ioctl(uinput_fd, UI_DEV_DESTROY);
         close(uinput_fd);
         return -1;

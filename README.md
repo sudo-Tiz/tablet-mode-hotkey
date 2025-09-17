@@ -76,7 +76,7 @@ You can use libinput to debug this like any other HID device. Assuming your buil
 In terminal 1:
 
 ```sh
-sudo ./tablet-mode-switch <INPUT_DEVICE> <NEW_TABLET_MODE_KEY>
+sudo ./tablet-mode-switch <INPUT_DEVICE> <NEW_TABLET_MODE_KEY-as_integer>
 ```
 
 In terminal 2:
