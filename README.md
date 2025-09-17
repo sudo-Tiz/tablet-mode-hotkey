@@ -1,3 +1,9 @@
+This repository is a fork of tablet-mode-hotkey [https://gitlab.com/jmole/tablet-mode-hotkey] from [Jon Moeller](https://gitlab.com/jmole)  
+I just made it compatible with my (any) configuration  
+Here is the original readme :
+
+---
+
 # tablet-mode-switch
 
 This program enables you to turn your device into "tablet mode" using the same HID events that the ACPI platform typically provides.
@@ -57,11 +63,11 @@ make tablet-mode-switch
 See [Makefile](Makefile) for details on what this does.
 
 ```sh
-sudo make install-service 
+sudo make install
 ```
 
 ```sh
-sudo make uninstall 
+sudo make uninstall
 ```
 
 ## Debugging
@@ -71,7 +77,7 @@ You can use libinput to debug this like any other HID device. Assuming your buil
 In terminal 1:
 
 ```sh
-sudo ./tablet-mode-switch
+sudo ./tablet-mode-switch <INPUT_DEVICE> <NEW_TABLET_MODE_KEY>
 ```
 
 In terminal 2:
@@ -83,7 +89,7 @@ sudo libinput debug-events
 If it's working as expected, you should see the device in libinput, and you should see an additional event after your chosen key is pressed:
 
 ```sh
-# event262 is the device the program created  
+# event262 is the device the program created
 -event262  DEVICE_ADDED            Fake Intel HID switches           seat0 default group13 cap:S
 -event7    DEVICE_ADDED            HP WMI hotkeys                    seat0 default group12 cap:kS
 
